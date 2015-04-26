@@ -1,0 +1,17 @@
+{
+  "name": "Nutrition Balance",
+  "version": "1.0.0",
+  "description": "'Front end for a web app'",
+  "authors": [
+    "Noe Sanchez"
+  ],
+  "license": "ISC",
+  "homepage": "http://nutrition.balance.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
