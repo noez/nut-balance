@@ -1,0 +1,3 @@
+@function color($color-name, $tone: base) {
+  @return map_get(map_get($colors, $color-name), $tone);
+}

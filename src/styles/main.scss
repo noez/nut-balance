@@ -1,0 +1,11 @@
+@import "helpers/variables";
+@import "helpers/functions";
+
+// Ejemplo de como extraer los colores del mapeo
+// Ver helpers/variables
+// Ver helpers/functions
+.box {
+  background : color('blue');
+  color : color('aqua','tint');
+  font-size : 24px;
+}
