@@ -1,0 +1,130 @@
+.head {
+  position: relative;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.head-top-bar {
+  background-color: color('blue','shade');
+  height: auto;
+  overflow: hidden;
+  .bar-item {
+    display: block;
+    float: left;
+  }
+  .bar-item-toggle {
+    width: 8%;
+    margin-right: 21%;
+    border-right: 1px solid color('blue', 'tint');
+    a {
+      display: block;
+      line-height: 40px;
+      height: 40px;
+      color: white;
+    }
+  }
+  .bar-item-links {
+    width: 30%;
+    margin-right: 0.5em;
+    margin-bottom: 0;
+  }
+  .bar-item-actions {
+    width: 40%;
+    margin-top: 0.25em;
+    .btn-cta {
+      display: inline-block;
+      vertical-align: middle;
+      width: 49%;
+    }
+  }
+}
+
+.links-list {
+  display: table;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  > .links-list-item {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .links-list-item-home {
+    text-transform: uppercase;
+    span {
+      padding-right: 1em;
+    }
+  }
+  .links-list-item-social-first {
+    padding-left: 0.5em;
+    border-left: 1px solid color('blue', 'tint');
+  }
+  .links-list-item-social-last {
+    padding-right: 0.5em;
+    border-right: 1px solid color('blue', 'tint');
+  }
+  a {
+    display: block;
+    line-height: 40px;
+    height: 40px;
+    color : white;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+@media(min-width: 320px) and (max-width:800px) {
+  .head-top-bar {
+    text-align: center;
+
+    .bar-item-toggle {
+      width: 20%;
+      margin-right: 0;
+      a {
+        line-height: 32px;
+        height: 32px;
+      }
+    }
+    .bar-item-links {
+      width: 80%;
+      margin-right: 0;
+      a {
+        line-height: 32px;
+        height: 32px;
+      }
+    }
+    .bar-item-actions {
+      border-top: 1px solid color('blue','tint');
+      padding-top: 0.5em;
+      margin-top: 0;
+      margin-bottom: 0.5em;
+      width: 100%;
+    }
+  }
+  .links-list {
+    .links-list-item-social-last {
+      padding-right: 0;
+      border-right: 0;
+    }
+  }
+}
+
+.head-bottom-bar {
+  background: white;
+  padding: 1em 0;
+}
+
+.head {
+  .logo {
+    display: block;
+    width: 300px;
+    height: 87px;
+    background: url('../images/nutrition-balance-logo.png') no-repeat;
+    > a {
+      @extend .logo;
+      background-color: transparent;
+      text-indent: -9999px;
+    }
+  }
+}

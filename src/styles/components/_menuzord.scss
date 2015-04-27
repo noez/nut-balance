@@ -1,0 +1,33 @@
+.menuzord {
+  padding: 0 !important;
+  .showhide {
+    margin: 1em 0;
+    em {
+      background: color('aqua', 'base');
+    }
+  }
+}
+.menuzord-menu {
+  float: right;
+  margin-top: 1.25em;
+  > li {
+    > a {
+      color: color('gray','base');
+      text-transform: uppercase;
+    }
+  }
+}
+
+.menuzord-brand {
+  margin: 0;
+}
+
+@media (min-width: 900px) {
+  .menuzord-menu {
+    > li {
+      > a {
+        padding: 1em;
+      }
+    }
+  }
+}
